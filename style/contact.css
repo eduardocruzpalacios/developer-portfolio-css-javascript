@@ -70,7 +70,7 @@ input#submit:hover {
 /* MQ TABLET */
 
 @media (min-width: 650px) and (max-width: 992px) {
-  .form_container {
+  .form-container {
     width: 450px;
   }
 }
@@ -78,7 +78,7 @@ input#submit:hover {
 /* MQ PC */
 
 @media (min-width: 993px) {
-  .form_container {
+  .form-container {
     width: 500px;
   }
 }
