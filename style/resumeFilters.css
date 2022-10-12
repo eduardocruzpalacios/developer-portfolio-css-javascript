@@ -1,0 +1,45 @@
+#resume .filter {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+#resume .filter p {
+  background-color: var(--white1);
+  box-shadow: 0 0 1px 1px var(--black2);
+  color: black;
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+#resume .filter p:hover {
+  background-color: var(--black2);
+  color: var(--white1);
+  cursor: pointer;
+}
+
+#resume .filter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#resume .filter p.filter-active {
+  background-color: var(--lightBlue);
+  color: var(--white1);
+}
+
+#resume #librarian,
+#resume #research {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  #resume .filter {
+    flex-direction: column;
+    align-items: center;
+  }
+}

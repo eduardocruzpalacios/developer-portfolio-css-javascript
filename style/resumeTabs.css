@@ -1,0 +1,89 @@
+#resume #librarian {
+  background-color: var(--white1);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 0 2px 2px var(--black2);
+  display: none;
+  margin: 0 auto;
+  padding: 20px;
+  width: 95%;
+}
+
+@media (min-width: 950px) {
+  #resume #librarian {
+    width: 900px;
+  }
+}
+
+#resume #librarian .tab {
+  background-color: var(--white1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#resume #librarian .tab button {
+  background-color: inherit;
+  border-bottom: 1px dotted var(--lightBlue);
+  border-right: 1px dotted var(--lightBlue);
+  cursor: pointer;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 15px;
+  transition: 0.3s;
+  width: 25%;
+}
+
+@media (max-width: 550px) {
+  #resume #librarian .tab button {
+    width: 50%;
+  }
+}
+
+#resume #librarian .tab button:hover {
+  background-color: var(--black2);
+  color: var(--white1);
+}
+
+#resume #librarian .tab button.active {
+  background-color: var(--lightBlue);
+  color: var(--white1);
+}
+
+#resume #librarian .tab-content {
+  border-bottom: 1px dotted var(--lightBlue);
+  border-right: 1px dotted var(--lightBlue);
+  display: none;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+}
+
+#resume #librarian .tab-content.initial {
+  display: block;
+}
+
+#resume #librarian .tab-content p {
+  color: var(--grey);
+}
+
+#resume #librarian .tab-content p.strong {
+  font-weight: bold;
+}
+
+#resume #librarian a {
+  animation: color 0.25s ease-in-out;
+  color: var(--lightBlue);
+  text-decoration: none;
+}
+
+#resume #librarian a:hover {
+  color: var(--darkBlue);
+}
+
+#resume #librarian i {
+  color: var(--lightBlue);
+  cursor: pointer;
+  font-size: 1rem;
+}

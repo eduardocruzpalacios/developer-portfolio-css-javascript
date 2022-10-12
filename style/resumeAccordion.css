@@ -1,0 +1,93 @@
+#resume #research {
+  background-color: var(--white1);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 0 2px 2px var(--black2);
+  display: none;
+  margin: 0 auto;
+  padding: 30px;
+  width: 900px;
+}
+
+@media (max-width: 950px) {
+  #resume #research {
+    width: 90%;
+  }
+}
+
+#resume #research h3 {
+  color: var(--darkBlue);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+#resume #research .accordion {
+  background-color: var(--white1);
+  border-top: 1px dotted var(--lightBlue);
+  color: var(--lightBlue);
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+#resume #research .accordion-clicked,
+#resume #research .accordion:hover {
+  background-color: var(--lightBlue);
+  color: var(--white1);
+}
+
+#resume #research .panel {
+  border-left: 1px dotted var(--lightBlue);
+  border-right: 1px dotted var(--lightBlue);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.25s linear;
+  width: 100%;
+}
+
+#resume #research .panel-clicked {
+  max-height: 100%;
+  padding: 20px;
+}
+
+#resume #research .accordion:after {
+  background-color: var(--white1);
+  color: var(--lightBlue);
+  content: '+';
+  float: right;
+  margin-left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#resume #research .accordion-clicked:after,
+#resume #research .accordion:hover:after {
+  background-color: var(--lightBlue);
+  color: var(--white1);
+}
+
+#resume #research .accordion-clicked:after {
+  content: '-';
+}
+
+#resume #research p {
+  color: var(--grey);
+}
+
+#resume #research p.strong {
+  font-weight: bold;
+}
+
+#resume #research a {
+  animation: color 0.25s ease-in-out;
+  color: var(--lightBlue);
+  text-decoration: none;
+}
+
+#resume #research a:hover {
+  color: var(--darkBlue);
+}
