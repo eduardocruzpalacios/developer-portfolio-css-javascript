@@ -1,0 +1,136 @@
+nav {
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  color: var(--white1);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav .home {
+  align-items: center;
+  color: var(--white1);
+  column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-decoration: none;
+  width: 70%;
+}
+
+nav .nav-menu {
+  width: 30%;
+}
+
+/* NAV 1 */
+
+nav h1 {
+  letter-spacing: 4px;
+}
+
+/* NAV 2 */
+
+@media (max-width: 649px) {
+  nav .nav-menu {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav i {
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  nav ul {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    row-gap: 10vh;
+    top: 0;
+    transform: translatey(-110vh);
+    transition: 0.75s ease-in-out;
+    width: 100%;
+  }
+
+  nav ul.show {
+    transform: translatey(0vh);
+  }
+
+  nav li a {
+    color: var(--white1);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+}
+
+/* MQ TABLET */
+
+@media (min-width: 650px) {
+  nav .home {
+    width: 35%;
+  }
+
+  nav .nav-menu {
+    width: 65%;
+  }
+
+  nav .nav-menu i {
+    display: none;
+  }
+
+  nav ul {
+    align-items: center;
+    column-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  nav li a {
+    color: var(--white1);
+    letter-spacing: 2px;
+    padding: 2px;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    border-bottom: 2px solid var(--white1);
+  }
+}
+
+/* MQ PC */
+
+@media (min-width: 993px) {
+  nav ul {
+    column-gap: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav.home {
+    width: 512px; /* 40% */
+  }
+
+  nav .nav-menu {
+    width: calc(1280px - 512px);
+  }
+}

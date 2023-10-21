@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Developer Portfolio | Eduardo de la Cruz Palacios</title>
+    <!-- metadata -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eduardo de la Cruz Palacios" />
+    <meta name="description" content="Web Developer Portfolio" />
+    <meta name="keywords" content="web developer, portfolio" />
+    <meta name="copyright" content="Eduardo de la Cruz Palacios" />
+    <meta name="robots" content="index, follow" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style/about.css">
+    <link rel="stylesheet" type="text/css" href="style/contact.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+    <link rel="stylesheet" type="text/css" href="style/popup.css">
+    <link rel="stylesheet" type="text/css" href="style/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/resumeFilters.css">
+    <link rel="stylesheet" type="text/css" href="style/resumeTabs.css">
+    <link rel="stylesheet" type="text/css" href="style/resumeAccordion.css">
+    <link rel="stylesheet" type="text/css" href="style/resumeTimeline.css">
+    <link rel="stylesheet" type="text/css" href="style/resumeModal.css">
+    <link rel="stylesheet" type="text/css" href="style/scrollbar.css">
+    <!-- JS -->
+    <script src="javascript/accordion.js" defer></script>
+    <script src="javascript/burgerBar.js" defer></script>
+    <script src="javascript/filters.js" defer></script>
+    <script src="javascript/iconAnimation.js" defer></script>
+    <script src="javascript/modal.js" defer></script>
+    <script src="javascript/popup.js"></script>
+    <script src="javascript/scrollReveal.js" defer></script>
+    <script src="javascript/tabs.js" defer></script>
+    <script src="javascript/typing.js" defer></script>
+    <!-- Favicon source: https://www.flaticon.com/free-icon/programming-code-signs_59118 -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Scroll reveal library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- animate.css animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body onload="typing()" id="home">
+
+    <!-- NAV -->
+
+    <nav id="nav">
+        <a href="#home" class="home">
+            <i class="fas fa-laptop-code fa-2x"></i>
+            <h1>edu</h1>
+        </a>
+
+        <div class="nav-menu">
+
+            <ul class="hidden">
+                <li><a href="#home" onclick="closeNav()">home</a></li>
+                <li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
+                <li><a href="#resume" onclick="closeNav()">Resume</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+            </ul>
+
+            <i id="icon-menu" class="fas fa-bars fa-2x"></i>
+
+        </div>
+
+    </nav>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="hero-image">
+            <h1 class="hero-text" id="home-message">&nbsp;</h1>
+            <a href="#portfolio">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio">
+
+        <h2>Portfolio</h2>
+
+        <article>
+            <div id="calculator" class="image"></div>
+            <div class="title">
+                <h3>Calculator</h3>
+            </div>
+            <div class="links">
+                <a class="left" href="https://eduardocruzpalacios.github.io/calculator-javascript/"
+                    target="_blank">DEMO</a>
+                <a class="righ" href="https://github.com/eduardocruzpalacios/calculator-javascript"
+                    target="_blank">GitHub</a>
+            </div>
+        </article>
+
+        <article>
+            <div id="primitiva" class="image"></div>
+            <div class="title">
+                <h3>Primitiva game</h3>
+            </div>
+            <div class="links">
+                <a class="left" href="https://eduardocruzpalacios.github.io/primitiva-game-javascript/"
+                    target="_blank">DEMO</a>
+                <a class="righ" href="https://github.com/eduardocruzpalacios/primitiva-game-javascript"
+                    target="_blank">GitHub</a>
+            </div>
+        </article>
+
+        <article>
+            <div id="quiz" class="image"></div>
+            <div class="title">
+                <h3>Quiz app</h3>
+            </div>
+            <div class="links">
+                <a class="left" href="https://eduardocruzpalacios.github.io/quiz-app-javascript/"
+                    target="_blank">DEMO</a>
+                <a class="righ" href="https://github.com/eduardocruzpalacios/quiz-app-javascript"
+                    target="_blank">GitHub</a>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- RESUME MODALS -->
+
+    <div id="daw" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('daw')"></i>
+            <h3>Desarrollo de Aplicaciones Web (DAW)</h3>
+            <p>Documentación oficial de la Comunidad Autónoma de Madrid</p>
+            <ul>
+                <li><a href="pdf/daw-ficha.pdf" target="_blank">Ficha Grado Superior IFCS03</a></li>
+                <li><a href="pdf/daw-bocam.pdf" target="_blank">Decreto 1/2011, de 13 de enero</a></li>
+            </ul>
+            <p>Asignaturas año 1</p>
+            <ul>
+                <li>Sistemas Informáticos</li>
+                <li>Bases de datos 1</li>
+                <li>Programación 1</li>
+                <li>Lenguajes de marcas y sistemas de gestión de información</li>
+                <li>Formación y orientación laboral</li>
+                <li>Empresa e iniciativa emprendedora</li>
+            </ul>
+            <p>Asignaturas año 2</p>
+            <ul>
+                <li>Bases de datos 2</li>
+                <li>Programación 2</li>
+                <li>Entornos de desarrollo</li>
+                <li>Desarrollo web en entorno cliente</li>
+                <li>Desarrollo web en entorno servidor</li>
+                <li>Despliegue de aplicaciones web</li>
+                <li>Diseño de interfaces web</li>
+                <li>Proyecto desarrollo de aplicaciones web</li>
+                <li>Formación en centro de trabajo</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="generation" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('generation')"></i>
+            <h3>Programación Web Java</h3>
+            <p>Técnico</p>
+            <ul>
+                <li>Programación Java: Algoritmia, POO, Control de Flujo, Excepciones, Estructuras, Colecciones,
+                    Entrada/Salida de Datos</li>
+                <li>Bases de Datos: Modelado, SQL</li>
+                <li>Desarrollo Web: HTML, CSS, JavaScript, Node.js</li>
+                <li>Desarrollo Web con Java y Spring: Environment, MVC, Spring, JPA, Ajax</li>
+                <li>- Proyectos: Modelado UML, Arquitectura, Testing, Buenas Prácticas, Integración Continúa,
+                    Metodología Ágil Scrum, Control de Versiones con Git y GitHub</li>
+            </ul>
+            <p>Soft Skills</p>
+            <ul>
+                <li>Mentalidades: Responsabilidad Personal, Mentalidad de Crecimiento, Orientación a Futuro,
+                    Persistencia</li>
+                <li>Comportamiento: Trabajo en Equipo, Comunicación, Enfoque al Cliente, Orientación al Detalle,
+                    Proactividad, Gestión del Tiempo, Dar/Recibir Feedback</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="moocjs" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('moocjs')"></i>
+            <h3>Programación con JavaScript</h3>
+            <p>Módulo 1. Páginas dinámicas</p>
+            <ul>
+                <li>Introducción</li>
+                <li>Ventajas y desventajas</li>
+                <li>JavaScript</li>
+            </ul>
+            <p>Módulo 2. Sintaxis del lenguaje JavaScript</p>
+            <ul>
+                <li>Variables</li>
+                <li>Tipos de datos</li>
+                <li>Operadores</li>
+                <li>Objetos del navegador</li>
+            </ul>
+            <p>Módulo 3. Control de flujo</p>
+            <ul>
+                <li>Estructuras</li>
+                <li>Funciones</li>
+            </ul>
+            <p>Módulo 4. Eventos y objetos</p>
+            <ul>
+                <li>Manejadores de eventos</li>
+                <li>Particularidades JSON sobre JavaScript</li>
+                <li>Manipulación de HTML con DOMO JavaScript</li>
+                <li>Manipulación de un HTML con DOM JavaScript</li>
+                <li>Selectores y DOM</li>
+                <li>Caso práctico: manejo del DOM</li>
+            </ul>
+            <p>Módulo 5. Ajax y JQuery</p>
+            <ul>
+                <li>Ajax: tecnologías implicadas y funcionamiento</li>
+                <li>Ajax: peticiones y respuestas</li>
+                <li>Ajax: casos prácticos</li>
+                <li>JQuery: maneras de desarrollar</li>
+                <li>JQuery: Selectores</li>
+                <li>JQuery: funciones principales</li>
+                <li>Ajax con JQuery</li>
+                <li>JQuery: casos prácticos</li>
+            </ul>
+            <p>Módulo 6. AngularJS y NodeJS</p>
+            <ul>
+                <li>ANGULAR: funcionamiento y elementos básicos</li>
+                <li>ANGULAR: casos prácticos</li>
+                <li>Node.js: creación de un servidor HTTP</li>
+                <li>Node.js: módulos principales</li>
+                <li>Node.js: casos prácticos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="moocweb1" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('moocweb1')"></i>
+            <h3>Introducción al Desarrollo Web: HTML y CSS (1/2)</h3>
+            <p>M&oacute;dulo 1. Historia de la web</p>
+            <ul>
+                <li>Presentaci&oacute;n</li>
+                <li>Consejos para aprender en este curso</li>
+                <li>&iquest;Este curso es para ti?</li>
+                <li>&iquest;Por qu&eacute; es importante que realices este curso?</li>
+                <li>Internet y la Web</li>
+                <li>Historia de Internet: su nacimiento</li>
+                <li>Historia de la Web: su nacimiento (parte 1)</li>
+                <li>Historia de la Web: su nacimiento (parte 2)</li>
+                <li>Historia de los navegadores web (1)</li>
+                <li>Historia de los navegadores (2)</li>
+            </ul>
+            <p>M&oacute;dulo 2. C&oacute;mo funciona la web</p>
+            <ul>
+                <li>Evoluci&oacute;n de la Web: de la p&aacute;gina web a la aplicaci&oacute;n web</li>
+                <li>El hipertexto y la hipermedia</li>
+                <li>Las URLs</li>
+                <li>Los nombres de dominio</li>
+                <li>Los nuevos nombres de dominio</li>
+                <li>Las direcciones IP y el sistema de nombres de dominio</li>
+                <li>Creaci&oacute;n de una p&aacute;gina web con Blogger (1): estructura de un blog</li>
+                <li>Creaci&oacute;n de una p&aacute;gina web con Blogger (2): configuraci&oacute;n b&aacute;sica</li>
+                <li>Creaci&oacute;n de una p&aacute;gina web con Blogger (3): edici&oacute;n b&aacute;sica de una
+                    entrada</li>
+                <li>Creaci&oacute;n de una p&aacute;gina web con Blogger (4): edici&oacute;n avanzada de una entrada
+                </li>
+                <li>Creaci&oacute;n de una p&aacute;gina web con Blogger (5): dise&ntilde;o y gadgets</li>
+            </ul>
+            <p>M&oacute;dulo 3. C&oacute;mo se escribe una p&aacute;gina web</p>
+            <ul>
+                <li>Presentaci&oacute;n</li>
+                <li>El desarrollo web</li>
+                <li>Prototipado: wireframes, mockups y prototipos</li>
+                <li>Historia de HTML</li>
+                <li>HTML: conceptos b&aacute;sicos (parte 1)</li>
+                <li>HTML: conceptos b&aacute;sicos (parte 2)</li>
+                <li>HTML: conceptos b&aacute;sicos (parte 3)</li>
+                <li>HTML: conceptos b&aacute;sicos (parte 4)</li>
+                <li>HTML: listas (1)</li>
+                <li>HTML: links</li>
+                <li>HTML: problemas con los editores</li>
+                <li>HTML: tres errores t&iacute;picos</li>
+                <li>Prototipos visuales de alta fidelidad</li>
+            </ul>
+            <p>M&oacute;dulo 4. C&oacute;mo se publica un sitio web</p>
+            <ul>
+                <li>Presentaci&oacute;n</li>
+                <li>C&oacute;mo comprar un dominio de Internet</li>
+                <li>C&oacute;mo publicar un sitio web: Alojamiento (hosting) (1/3)</li>
+                <li>C&oacute;mo publicar un sitio web: Alojamiento (hosting) (2/3)</li>
+                <li>C&oacute;mo publicar un sitio web: Alojamiento (hosting) (3/3)</li>
+                <li>C&oacute;mo se publica un sitio web en Internet (1)</li>
+                <li>C&oacute;mo se publica un sitio web en Internet (2): cliente FTP</li>
+                <li>C&oacute;mo se publica un sitio web en Internet (3): cliente FTP online</li>
+                <li>HTML5: Computaci&oacute;n en la nube</li>
+                <li>HTML: Formularios - Parte 1</li>
+                <li>HTML: Formularios - Parte 2</li>
+                <li>Alojamiento (Hosting) Gratuito</li>
+                <li>Alojamiento (Hosting) Gratuito - hostinger.es</li>
+                <li>Alojamiento (Hosting) Gratuito - 000webhost.com</li>
+            </ul>
+            <p>M&oacute;dulo 5. C&oacute;mo se escribe una p&aacute;gina web bien estructurada</p>
+            <ul>
+                <li>Presentaci&oacute;n</li>
+                <li>HTML: juego de caracteres</li>
+                <li>HTML: el juego de caracteres y los editores de texto</li>
+                <li>HTML: tablas</li>
+                <li>HTML: im&aacute;genes</li>
+                <li>HTML: validaci&oacute;n del c&oacute;digo</li>
+                <li>HTML5: introducci&oacute;n</li>
+                <li>HTML5: &iquest;Qu&eacute; es HTML5?</li>
+                <li>HTML5: de HTML4 a HTML5</li>
+                <li>HTML5: Nuevas funcionalidades en formularios (parte 1)</li>
+                <li>HTML5: Nuevas funcionalidades en formularios (parte 2)</li>
+                <li>HTML5: Ejemplo de formulario</li>
+                <li>HTML5: &iquest;Por qu&eacute; es importante escribir c&oacute;digo correcto? (1/3)</li>
+                <li>HTML5: &iquest;Por qu&eacute; es importante escribir c&oacute;digo correcto? (2/3)</li>
+                <li>HTML5: &iquest;Por qu&eacute; es importante escribir c&oacute;digo correcto? (3/3)</li>
+                <li>HTML: &iquest;migrar a un nuevo juego de caracteres?</li>
+                <li>XML: HTML y XHTML</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="moocweb2" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('moocweb2')"></i>
+            <h3>Introducción al Desarrollo Web: HTML y CSS (2)</h3>
+            <p>M&oacute;dulo 1. C&oacute;mo se define la presentaci&oacute;n de una p&aacute;gina web</p>
+            <ul>
+                <li>CSS: conceptos b&aacute;sicos</li>
+                <li>CSS: c&oacute;mo se usa en HTML (parte 1)</li>
+                <li>CSS: c&oacute;mo se usa en HTML (parte 2)</li>
+                <li>CSS: c&oacute;mo se usa en HTML (parte 3)</li>
+                <li>CSS: selectores b&aacute;sicos (1)</li>
+                <li>CSS: selectores b&aacute;sicos (2)</li>
+                <li>CSS: colores</li>
+                <li>CSS: selectores avanzados</li>
+                <li>CSS: selectores CSS3</li>
+            </ul>
+            <p>M&oacute;dulo 2. C&oacute;mo se define la presentaci&oacute;n de los elementos de una p&aacute;gina web
+            </p>
+            <ul>
+                <li>CSS: definir el estilo de una lista (1)</li>
+                <li>CSS: definir el estilo de una lista (2)</li>
+                <li>CSS: definir el estilo del texto (1)</li>
+                <li>CSS: definir el estilo del texto (2)</li>
+                <li>CSS: definir el estilo del texto (3)</li>
+                <li>CSS: colores en CSS3</li>
+                <li>CSS: ejemplo de uso de colores transparentes</li>
+                <li>CSS: cascada y herencia (1)</li>
+                <li>CSS: cascada y herencia (2)</li>
+                <li>CSS: cascada y herencia (3)</li>
+                <li>CSS: especificidad de las reglas</li>
+                <li>CSS: escribir un CSS que sea f&aacute;cil de leer</li>
+                <li>CSS: ordenar un CSS</li>
+                <li>CSS: el modelo de caja (1)</li>
+                <li>CSS: el modelo de caja (2)</li>
+                <li>El uso del color: &iquest;Qu&eacute; es el color?</li>
+                <li>El uso del color: Significado de los colores</li>
+                <li>El uso del color: Dise&ntilde;ando con color</li>
+            </ul>
+            <p>M&oacute;dulo 3. C&oacute;mo se maqueta una p&aacute;gina web</p>
+            <ul>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina (1)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina (2)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - sin dise&ntilde;o (3)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - dise&ntilde;o fijo (4)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - dise&ntilde;o el&aacute;stico (5)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - dise&ntilde;o l&iacute;quido o fluido (6)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - dise&ntilde;o adaptable (7)</li>
+                <li>CSS: maquetaci&oacute;n de una p&aacute;gina - dise&ntilde;o con rejilla/ret&iacute;cula (8)</li>
+                <li>CSS: la web &uacute;nica (one web)</li>
+                <li>CSS: dise&ntilde;o adaptable, adaptativo o flexible</li>
+                <li>CSS: creaci&oacute;n de un dise&ntilde;o adaptable, adaptativo o flexible (parte 1)</li>
+                <li>CSS: creaci&oacute;n de un dise&ntilde;o adaptable, adaptativo o flexible (parte 2)</li>
+                <li>CSS: creaci&oacute;n de un dise&ntilde;o adaptable, adaptativo o flexible (parte 3)</li>
+            </ul>
+            <p>M&oacute;dulo 4. C&oacute;mo se logra que una p&aacute;gina web tenga &eacute;xito</p>
+            <ul>
+                <li>Introducci&oacute;n al posicionamiento (SEO): conceptos b&aacute;sicos</li>
+                <li>Introducci&oacute;n al posicionamiento (SEO): t&eacute;cnicas b&aacute;sicas (1)</li>
+                <li>Introducci&oacute;n al posicionamiento (SEO): t&eacute;cnicas b&aacute;sicas (2)</li>
+                <li>La web sem&aacute;ntica (1)</li>
+                <li>La web sem&aacute;ntica (2)</li>
+                <li>La web sem&aacute;ntica (3)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 1)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 2)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 3)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 4)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 5)</li>
+                <li>&iquest;Usabilidad, accesibilidad? (parte 6)</li>
+                <li>Usabilidad: principios b&aacute;sicos</li>
+                <li>Usabilidad: qu&eacute; es</li>
+                <li>Usabilidad web: consejos</li>
+                <li>Eduardo Manch&oacute;n: Tres consejos de usabilidad (parte 1)</li>
+                <li>Eduardo Manch&oacute;n: Tres consejos de usabilidad (parte 2)</li>
+                <li>Usabilidad: La posici&oacute;n del bot&oacute;n &quot;aceptar&quot;</li>
+                <li>Accesibilidad web: &iquest;por qu&eacute; es importante?</li>
+                <li>Accesibilidad: Discapacidad en la web (parte 1)</li>
+                <li>Accesibilidad: Discapacidad en la web (parte 2)</li>
+                <li>Accesibilidad web: 4 elementos m&aacute;s problem&aacute;ticos</li>
+                <li>C&oacute;mo la Web mejora la vida de las personas con discapacidad</li>
+                <li>Ejemplos de problemas de accesibilidad</li>
+                <li>Uso de un magnificador de pantalla (1)</li>
+                <li>Uso de un magnificador de pantalla (2)</li>
+                <li>Errores web: El t&iacute;tulo de la p&aacute;gina</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="master" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('master')"></i>
+            <h3>Máster Universitario en Bibliotecas y Servicios de Información Digital</h3>
+            <p>Documentación oficial</p>
+            <ul>
+                <li><a href="pdf/boe-a-2010-14283.pdf" target="_blank">Resolución de la Universidad Carlos III de
+                        Madrid</a></li>
+            </ul>
+            <p>Descripción:</p>
+            <ul>
+                <li>El objetivo general del Máster es formar expertos cualificados capaces de proyectar y gestionar
+                    sistemas y servicios de información con una alta base tecnológica, en los que la información y sus
+                    productos documentales derivados se encuentran principalmente en formatos y soportes digitales, y
+                    que pueden estar ubicados no solo en bibliotecas, archivos y centros de documentación, sino en
+                    cualquier otro ámbito en el que se esté produciendo, gestionando o difundiendo información digital.
+                </li>
+            </ul>
+            <p>Asignaturas</p>
+            <ul>
+                <li>Direcci&oacute;n de servicios de informaci&oacute;n</li>
+                <li>Visualizaci&oacute;n de informaci&oacute;n</li>
+                <li>Digitalizaci&oacute;n y preservaci&oacute;n</li>
+                <li>Tecnolog&iacute;as de marcado para textos digitales</li>
+                <li>Vocabularios y esquemas sem&aacute;nticos para web</li>
+                <li>Gesti&oacute;n del conocimiento</li>
+                <li>Informetr&iacute;a</li>
+                <li>Servicios de referencia digital</li>
+                <li>Recursos tecnol&oacute;gicos en la biblioteca digital</li>
+                <li>Web social</li>
+                <li>Trabajo Fin de M&aacute;ster</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="infodoc" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('infodoc')"></i>
+            <h3>Grado en Información y Documentación</h3>
+            <p>Documentación oficial</p>
+            <ul>
+                <li><a href="pdf/boe-a-2009-4954.pdf" target="_blank">Resolución de la Universidad Carlos III de
+                        Madrid</a></li>
+            </ul>
+            <p>Descripción:</p>
+            <ul>
+                <li>Las actividades del profesional de la información y la documentación son las relacionadas con
+                    localizar la información, analizarla y tratarla para aumentar su valor para quien la tiene que
+                    utilizar. En definitiva, contribuyen a ahorrar tiempo en las organizaciones. Para ello tienen que
+                    adquirir competencias relacionadas con el manejo de las tecnologías, la comunicación y la gestión,
+                    así como las propias de aquellos campos de actividad en la que desarrollan su trabajo.</li>
+            </ul>
+            <p>Puestos profesionales característicos:</p>
+            <ul>
+                <li>Bibliotecario, archivero, documentalista, y gestor del
+                    conocimiento o de contenidos.</li>
+            </ul>
+            <p>Asignaturas a&ntilde;o 1:</p>
+            <ul>
+                <li>&Eacute;tica y deontolog&iacute;a profesional&nbsp;</li>
+                <li>Fundamentos de administraci&oacute;n de empresas</li>
+                <li>Introducci&oacute;n a la Sociolog&iacute;a</li>
+                <li>R&eacute;gimen jur&iacute;dico de la informaci&oacute;n y la documentaci&oacute;n</li>
+                <li>T&eacute;cnicas de expresi&oacute;n oral y escrita</li>
+                <li>Informaci&oacute;n y Sociedad</li>
+                <li>Comunicaci&oacute;n</li>
+                <li>Estad&iacute;stica</li>
+                <li>Habilidades: Ingl&eacute;s</li>
+                <li>Inform&aacute;tica</li>
+                <li>Informaci&oacute;n y Referencia</li>
+            </ul>
+            <p>Asignaturas a&ntilde;o 2:</p>
+            <ul>
+                <li>Historia de las Instituciones</li>
+                <li>Archiv&iacute;stica</li>
+                <li>Catalogaci&oacute;n Automatizada</li>
+                <li>Historia del Documento</li>
+                <li>Tecnolog&iacute;as de Internet</li>
+                <li>Catalogaci&oacute;n Avanzada</li>
+                <li>Fundamentos y dise&ntilde;o de bases de datos</li>
+                <li>Habilidades: Humanidades</li>
+                <li>Recursos de informaci&oacute;n especializados</li>
+                <li>Sistemas de clasificaci&oacute;n del conocimiento</li>
+            </ul>
+            <p>Asignaturas a&ntilde;o 3:</p>
+            <ul>
+                <li>Estudios de Usuarios</li>
+                <li>Gesti&oacute;n t&eacute;cnica de documentos de archivo</li>
+                <li>Indizaci&oacute;n y Resumen</li>
+                <li>Bibliotecas p&uacute;blicas y escolares</li>
+                <li>Fundamentos de Programaci&oacute;n</li>
+                <li>Edici&oacute;n Digital</li>
+                <li>Gesti&oacute;n y marketing de unidades de informaci&oacute;n</li>
+                <li>Sistemas automatizados en unidades de informaci&oacute;n</li>
+                <li>Archivos de empresa: gesti&oacute;n electr&oacute;nica de documentos</li>
+                <li>Pol&iacute;ticas de Informaci&oacute;n</li>
+            </ul>
+            <p>Asignaturas a&ntilde;o 4:</p>
+            <ul>
+                <li>Bibliometr&iacute;a</li>
+                <li>B&uacute;squeda y recuperaci&oacute;n de informaci&oacute;n</li>
+                <li>Gesti&oacute;n de recursos humanos, financieros e infraestructura</li>
+                <li>Gesti&oacute;n y desarrollo de la colecci&oacute;n</li>
+                <li>Documentaci&oacute;n Audiovisual</li>
+                <li>Trabajo Fin de Grado</li>
+                <li>Practicum</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sedicdspace" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicdspace')"></i>
+            <h3>Gestión de Repositorios Digitales con DSpace</h3>
+            <p>M&oacute;dulo 1: Repositorios. Introducci&oacute;n funcional a dspace</p>
+            <ul>
+                <li>En qu&eacute; consiste un repositorio institucional.</li>
+                <li>Descripci&oacute;n funcional de dspace desde la perspectiva del usuario.</li>
+                <li>Instalaci&oacute;n de dspace.</li>
+                <li>Crear comunidades y colecciones.</li>
+                <li>Publicar contenidos en dspace. Metadatos y ciclos de aprobaci&oacute;n y revisi&oacute;n.</li>
+                <li>Opciones de b&uacute;squeda.</li>
+            </ul>
+            <p>M&oacute;dulo 2: Administrar DSpace</p>
+            <ul>
+                <li>Creaci&oacute;n de usuarios, grupos y autorizaciones.</li>
+                <li>A&ntilde;adir nuevos metadatos.</li>
+                <li>Importar y exportar metadatos y objetos.</li>
+                <li>Administrar &iacute;tems.</li>
+                <li>Tareas de curaci&oacute;n.</li>
+            </ul>
+            <p>M&oacute;dulo 3: Configuraci&oacute;n b&aacute;sica</p>
+            <ul>
+                <li>Modificar la p&aacute;gina de inicio y los men&uacute;s.</li>
+                <li>Configurar, a&ntilde;adir y modificar metadatos.</li>
+                <li>Configurar flujos de aprobaci&oacute;n y revisi&oacute;n de contenidos.</li>
+                <li>Configurar el contenido de los correos-e.</li>
+                <li>Traducir y actualizar los t&eacute;rminos en la interfaz de usuario.</li>
+                <li>Activar distintos idiomas.</li>
+                <li>Configurar licencias para la distribuci&oacute;n de contenidos.</li>
+            </ul>
+            <p>M&oacute;dulo 4: Estad&iacute;sticas</p>
+            <ul>
+                <li>Estad&iacute;sticas que ofrece dspace para conocer el uso de nuestro repositorio.</li>
+                <li>Alternativas para la obtenci&oacute;n de estad&iacute;sticas.</li>
+                <li>Estad&iacute;sticas de Google Analytics.</li>
+            </ul>
+            <p>M&oacute;dulo 5: Configuraci&oacute;n avanzada</p>
+            <ul>
+                <li>Cambiar la apariencia visual del sitio.</li>
+                <li>Modificar formularios de b&uacute;squeda y p&aacute;ginas de resultados.</li>
+                <li>Modificar las p&aacute;ginas de visualizaci&oacute;n de documentos, comunidades y colecciones.</li>
+                <li>Mantenimiento y actualizaci&oacute;n masiva de datos.</li>
+            </ul>
+            <p>M&oacute;dulo 6: Exponer metadatos a otros repositorios</p>
+            <ul>
+                <li>Exponer metadatos v&iacute;a OAI-PMH.</li>
+                <li>Configurar la recolecci&oacute;n de metadatos v&iacute;a OAI-PMH.</li>
+                <li>Registrar nuestro repositorio.</li>
+                <li>Pautas que debemos seguir para que se recolecten nuestros metadatos en distintos repositorios
+                    (recolecta, OpenAIRE...).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sedicpreservacion" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicpreservacion')"></i>
+            <h3>Preservación Digital: cómo pasar del problema a la planificación de soluciones</h3>
+            <p>M&oacute;dulo 1: Introducci&oacute;n</p>
+            <ul>
+                <li>Definiciones</li>
+                <li>La evoluci&oacute;n del campo</li>
+                <li>Principales fuentes</li>
+            </ul>
+            <p>M&oacute;dulo 2: Qu&eacute; es la preservaci&oacute;n digital</p>
+            <ul>
+                <li>La vulnerabilidad de la informaci&oacute;n digital</li>
+                <li>La selecci&oacute;n y adquisici&oacute;n del material digital</li>
+                <li>Los aspectos legales</li>
+                <li>Los recursos humanos y organizativos</li>
+                <li>La sostenibilidad econ&oacute;mica</li>
+            </ul>
+            <p>M&oacute;dulo 3: La preservaci&oacute;n digital a nivel t&eacute;cnico: problemas, est&aacute;ndares y
+                soluciones</p>
+            <ul>
+                <li>Los problemas t&eacute;cnicos</li>
+                <li>El modelo OAIS</li>
+                <li>Est&aacute;ndares: METS, PREMIS, MD5, etc.</li>
+                <li>Estrategias a largo plazo: cambio de soporte, migraci&oacute;n de formatos, emulaci&oacute;n y
+                    an&aacute;lisis forense</li>
+            </ul>
+            <p>M&oacute;dulo 4: Ejemplos de soluciones y buenas pr&aacute;cticas en distintos sectores</p>
+            <ul>
+                <li>La preservaci&oacute;n del patrimonio documental: archivos, bibliotecas y museos</li>
+                <li>La preservaci&oacute;n de los resultados cient&iacute;ficos: las revistas cient&iacute;ficas y los
+                    datos de investigaci&oacute;n</li>
+                <li>La preservaci&oacute;n de material web y de redes sociales</li>
+                <li>La preservaci&oacute;n en las empresas</li>
+            </ul>
+            <p>M&oacute;dulo 5: Elementos para actuar</p>
+            <ul>
+                <li>Actuaciones previas de buena gesti&oacute;n documental</li>
+                <li>Actuaciones propias de preservaci&oacute;n</li>
+                <li>Herramientas de planificaci&oacute;n</li>
+                <li>Auditor&iacute;a y certificaci&oacute;n de repositorios digitales fiables</li>
+            </ul>
+            <p>M&oacute;dulo 6: Planes de preservaci&oacute;n</p>
+            <ul>
+                <li>Qu&eacute; es un plan de preservaci&oacute;n</li>
+                <li>Contenidos de un plan de preservaci&oacute;n</li>
+                <li>Elaboraci&oacute;n y gesti&oacute;n de un plan de preservaci&oacute;n</li>
+                <li>Los planes de gesti&oacute;n de datos (Data Management Plans)</li>
+            </ul>
+            <p>M&oacute;dulo adicional no evaluable aportado por LIBNOVA</p>
+            <ul>
+                <li>Libsafe: esquema OAIS</li>
+                <li>Libsafe: configuraci&oacute;n</li>
+                <li>Libsafe: ejemplo de preservaci&oacute;n</li>
+                <li>Libsafe: otras funcionalidades</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sedicfuturo" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicfuturo')"></i>
+            <h3>La biblioteca del futuro. Tendencias tecnológicas en servicios, roles y contenidos digitales</h3>
+            <p>M&oacute;dulo 1: Biblioteca f&iacute;sica-biblioteca digital. Redefniendo la biblioteca y sus espacios
+            </p>
+            <p>M&oacute;dulo 2: Contenidos f&iacute;sicos y digitales: tendencias actuales y futuras en
+                adquisici&oacute;n</p>
+            <p>M&oacute;dulo 3: Tecnolog&iacute;a bibliotecaria: &iquest;hacia d&oacute;nde nos dirigimos?</p>
+            <p>M&oacute;dulo 4: Evoluci&oacute;n de las funciones bibliotecarias. Una perspectiva basada en servicios
+            </p>
+            <p>M&oacute;dulo 5: El pr&eacute;stamo de contenido en la era de la conectividad y el acceso. Lectura
+                digital, dispositivos y apps</p>
+            <p>M&oacute;dulo 6: Difusi&oacute;n de la biblioteca y nuevos enfoques de la extensi&oacute;n cultural</p>
+            <p>M&oacute;dulo 7: Nuevos perfiles profesionales: de bibliotecarios a bibliotecarios-comunity
+                managers-content curators-...</p>
+            <p>M&oacute;dulo 8: Nuevas tendencias en bibliotecas p&uacute;blicas, acad&eacute;micas, escolares y de
+                empresa</p>
+        </div>
+    </div>
+
+    <div id="sedicgamificacion" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicgamificacion')"></i>
+            <h3>Gamificación: el Engagement Positivo y Significativo</h3>
+            <p>M&oacute;dulo 1: Pensamiento l&uacute;dico y gamificaci&oacute;n</p>
+            <ul>
+                <li>Introducci&oacute;n a la gamificaci&oacute;n</li>
+                <li>Entender los juegos</li>
+                <li>Motivaci&oacute;n y comportamiento</li>
+            </ul>
+            <p>M&oacute;dulo 2: Herramientas de la gamificaci&oacute;n</p>
+            <ul>
+                <li>Tipos de jugadores</li>
+                <li>Componentes, mec&aacute;nicas y din&aacute;micas</li>
+            </ul>
+            <p>M&oacute;dulo 3: Aplicaci&oacute;n</p>
+            <ul>
+                <li>Por qu&eacute; gamificar</li>
+                <li>Tendencias</li>
+            </ul>
+            <p>M&oacute;dulo 4: Dise&ntilde;o</p>
+            <ul>
+                <li>Pasos para gamificar</li>
+                <li>Riesgos</li>
+            </ul>
+            <p>M&oacute;dulo 5: Experiencias en bibliotecas</p>
+            <ul>
+                <li>Proyectos reales</li>
+                <li>Ejemplos en bibliotecas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sedicrecursos" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicrecursos')"></i>
+            <h3>Gestión y Organización de Recursos Electrónicos”</h3>
+            <p>M&oacute;dulo 1: Recursos electr&oacute;nicos. Definici&oacute;n y tipolog&iacute;a</p>
+            <ul>
+                <li>Definici&oacute;n de recursos-e</li>
+                <li>Tipos de recursos-e (libro-e, revistas-e, bases de datos, etc.)</li>
+                <li>Principales proveedores de recursos-e</li>
+                <li>Tratamiento de los recursos-e: diferencias respecto a los recursos tradicionales impresos</li>
+            </ul>
+            <p>M&oacute;dulo 2: Integraci&oacute;n de los recursos-e en la biblioteca</p>
+            <ul>
+                <li>Est&aacute;ndares para la descripci&oacute;n y catalogaci&oacute;n de recursos-e</li>
+                <li>El formato MARC y los recursos electr&oacute;nicos</li>
+                <li>Proyectos y metadatos para la descripci&oacute;n de recursos-e</li>
+                <li>Sistemas ERM (Electronic Resource Management) para la organizaci&oacute;n de la colecci&oacute;n
+                    electr&oacute;nica</li>
+            </ul>
+            <p>M&oacute;dulo 3: Tecnolog&iacute;as para la gesti&oacute;n y acceso a los recursos-e</p>
+            <ul>
+                <li>Tecnolog&iacute;as de enlazado (SFX, OpenURL, CrossRef, DOI)</li>
+                <li>B&uacute;squedas federadas</li>
+                <li>Integraci&oacute;n de metadatos mediante OAI</li>
+                <li>Otros sistemas de metadatos</li>
+            </ul>
+            <p>M&oacute;dulo 4: Desarrollo de la colecci&oacute;n electr&oacute;nica</p>
+            <ul>
+                <li>El desarrollo de la colecci&oacute;n. Criterios de selecci&oacute;n</li>
+                <li>Ejemplos de proveedores de recursos electr&oacute;nicos</li>
+                <li>Modelos de licencia / adquisici&oacute;n de recursos</li>
+                <li>Recursos gratuitos y &quot;open access&quot;</li>
+                <li>Repositorios OAI</li>
+            </ul>
+            <p>M&oacute;dulo. 5: Evaluaci&oacute;n de la colecci&oacute;n electr&oacute;nica</p>
+            <ul>
+                <li>Estrategias de evaluaci&oacute;n del uso de los recursos electr&oacute;nicos</li>
+                <li>Medici&oacute;n del uso y evaluaci&oacute;n cuantitativa</li>
+                <li>Evaluaci&oacute;n cualitativa de los recursos-e</li>
+                <li>Est&aacute;ndares y normativa</li>
+            </ul>
+            <p>M&oacute;dulo. 6: Pr&aacute;cticas</p>
+            <ul>
+                <li>Catalogaci&oacute;n de recursos-e con MARC</li>
+                <li>Evaluaci&oacute;n pr&aacute;ctica de recursos-e</li>
+                <li>Evaluaci&oacute;n de los recursos-e en distintos centros</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sedicbib" class="modal-container">
+        <div class="modal-content">
+            <i class="fas fa-times" onclick="closeModalInfo('sedicbib')"></i>
+            <h3>Planificación y Gestión de Bibliotecas Digitales</h3>
+            <p>M&oacute;dulo 1: La biblioteca digital como concepto</p>
+            <ul>
+                <li>&iquest;Qu&eacute; es una biblioteca digital?</li>
+                <li>Repositorios y bibliotecas digitales</li>
+                <li>Tipolog&iacute;a de bibliotecas digitales</li>
+            </ul>
+            <p>M&oacute;dulo 2: Elementos que componen la Biblioteca Digital</p>
+            <ul>
+                <li>Objetos digitales</li>
+                <li>Infraestructura de almacenamiento y servicio</li>
+                <li>Sistema de Gesti&oacute;n de Biblioteca Digital: el software</li>
+                <li>Herramientas de interactuaci&oacute;n con el usuario</li>
+                <li>C&oacute;mo planificar una biblioteca digital</li>
+            </ul>
+            <p>M&oacute;dulo 3: Normalizaci&oacute;n necesaria en bibliotecas digitales: Est&aacute;ndares
+                t&eacute;cnicos</p>
+            <ul>
+                <li>Tipos de normas que confluyen en la creaci&oacute;n de bibliotecas digitales</li>
+                <li>Est&aacute;ndares para la organizaci&oacute;n de la informaci&oacute;n: metadatos y</li>
+                <li>ontolog&iacute;as</li>
+                <li>Est&aacute;ndares para el intercambio de la informaci&oacute;n: protocolos y lenguajes de marcado
+                </li>
+                <li>Otros est&aacute;ndares: Linked Open Data como est&aacute;ndar de facto para las bibliotecas</li>
+            </ul>
+            <p>M&oacute;dulo 4: An&aacute;lisis de los principales proyectos de Bibliotecas Digitales</p>
+            <ul>
+                <li>An&aacute;lisis de los principales proyectos de Bibliotecas Digitales existentes en el &aacute;mbito
+                    nacional e internacional: Europeana</li>
+                <li>An&aacute;lisis de los principales proyectos de Bibliotecas Digitales existentes en el &aacute;mbito
+                    nacional e internacional: World Digital Library, Biblioteca Digital Hisp&aacute;nica, Hipania y
+                    Singularis</li>
+            </ul>
+            <p>M&oacute;dulo 5: Otros temas clave para la creaci&oacute;n y gesti&oacute;n de bibliotecas digitales</p>
+            <ul>
+                <li>Preservaci&oacute;n y conservaci&oacute;n de contenidos digitales</li>
+                <li>Control y difusi&oacute;n de contenidos (Copyright, obras hu&eacute;rfanas, Open Access, etc.)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- RESUME - FILTERS-->
+
+    <section id="resume">
+
+        <h2>Resume</h2>
+
+        <div class="filter">
+            <p id="tabProgrammer" onclick="clickFilter('programmer','tabProgrammer')" class="filter-active filter-tag">
+                Programmer</p>
+            <p id="tabLibrarian" onclick="clickFilter('librarian','tabLibrarian')" class="filter-tag">
+                Librarian</p>
+            <p id="tabResearch" onclick="clickFilter('research','tabResearch')" class="filter-tag">
+                Research</p>
+        </div>
+
+        <!-- RESUME - EDUCATION (TIMELINE) -->
+
+        <div id="programmer" class="filter-container">
+
+            <div class="timeline">
+
+                <div class="container left">
+                    <div class="content">
+                        <h3>2020-2022</h3>
+                        <p>Cursos en Udemy:
+                        <ul>
+                            <li><span class="strong">React Hooks</span> (3 horas) (2021/jul) <a
+                                    href="https://www.udemy.com/course/react-hooks/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a></li>
+                            <li><span class="strong">Design Patterns in JavaScript</span> (10 horas) (2021/jul) <a
+                                    href="https://www.udemy.com/course/design-patterns-javascript/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a></li>
+                            <li><span class="strong">Learn Windows & Linux Command Line</span> (4 horas) (2021/jul) <a
+                                    href="https://www.udemy.com/course/command-line-course/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a></li>
+                            <li><span class="strong">JavaScript: Understanding the Weird Parts</span> (11,5 horas)
+                                (2021/jul) <a href="https://www.udemy.com/course/understand-javascript/"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                            <li><span class="strong">Git Complete: The definitive, step-by-step guide to Git</span> (6
+                                horas) (2021/jun) <a href="https://www.udemy.com/course/git-complete/"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                            <li><span class="strong">Agile Fundamentals: Including Scrum and Kanban</span> (4,5 horas)
+                                (2021/jun) <a
+                                    href="https://www.udemy.com/course/agile-fundamentals-scrum-kanban-scrumban/"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                        </p>
+                        <p><span class="strong">Desarrollador FrontEnd Junior</span> - Cognizant (2021/jun -)</p>
+                        <p><span class="strong">Formación Profesional Técnico Superior en Desarrollo de Aplicaciones
+                                Web</span> - iFP Grupo Planeta (2020/feb - 2022/feb) <i onclick="openModalInfo('daw')"
+                                class="fas fa-info-circle"></i></p>
+                        <p><span class="strong">Programación Web Java</span> de Generation Spain (375
+                            horas)
+                            (2020/ene-may) <i onclick="openModalInfo('generation')" class="fas fa-info-circle"></i></p>
+                        <p><span class="strong">Inglés C1</span> - Escuela Oficial de Idiomas (2020/sep)</p>
+                    </div>
+                </div>
+
+                <div class="container right">
+                    <div class="content">
+                        <h3>2019</h3>
+                        <p><span class="strong">Curso Programación con JavaScript</span> - Miríada X (40 horas)
+                            (2019/oct-nov) <i onclick="openModalInfo('moocjs')" class="fas fa-info-circle"></i></p>
+                        <p><span class="strong">Curso Introducción al Desarrollo Web: HTML y CSS (2)</span> - Google
+                            Actívate (40 horas) (2019/nov) <i onclick="openModalInfo('moocweb2')"
+                                class="fas fa-info-circle"></i></p>
+                        <p><span class="strong">Curso Introducción al Desarrollo Web: HTML y CSS (1)</span> - Google
+                            Actívate (40 horas) (2019/oct-nov) <i onclick="openModalInfo('moocweb1')"
+                                class="fas fa-info-circle"></i></p>
+                    </div>
+                </div>
+
+                <div class="container left">
+                    <div class="content">
+                        <h3>2016 - 2018</h3>
+                        <p><span class="strong">Certificate in Advanced English (CAE)</span> - (2018/jul)</p>
+                        <p><span class="strong">First Certificate in English (FCE)</span> - (2016/dic)</p>
+                        <p><span class="strong">Curso de Inmersión en Lengua Inglesa (B2 según CEFRL)</span> de
+                            Universidad Internacional Menéndez Pelayo (40 horas) (2016/dic)</p>
+                    </div>
+                </div>
+
+                <div class="container right">
+                    <div class="content">
+                        <h3>2015</h3>
+                        <p><span class="strong">Webmaster</span> - Congreso Iberoamericano de Bibliotecas Escolares
+                            (2015/mar-dic)</p>
+                        <ul>
+                            <li>Diseño, desarrollo y gestión de <a href="https://cibes2015.wixsite.com/cibes2015"
+                                    target="_blank">CIBES 2015</a></li>
+                        </ul>
+                        <p><span class="strong">Auxiliar de informática</span> - Universidad Carlos III de Madrid
+                            (2015/feb-oct)</p>
+                        <ul>
+                            <li>Soporte de Informática</li>
+                            <li>Diseño responsive de páginas web con HTML5, CSS3 y Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RESUME - PROJECTS (TABS) -->
+
+        <div id="librarian" class="filter-container">
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tab-link active" onclick="openTab(event, 'experience')">Experience</button>
+                <button class="tab-link" onclick="openTab(event, 'formation')">Education</button>
+                <button class="tab-link" onclick="openTab(event, 'events')">Events</button>
+                <button class="tab-link" onclick="openTab(event, 'published')">Published</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="experience" class="tab-content initial">
+                <p class="strong">Consejo Superior de Investigaciones Científicas. Unidad de Recursos de Información
+                    Científica para la investigación. Oficina Técnica Digital CSIC (diciembre/2018 –
+                    noviembre/2020)</p>
+                <p>Administración de repositorio digital (metadatos Dublin Core y software DSpace)</p>
+                <p class="strong">Beca formARTE de fondo Biblioteconomía en fondo moderno. Subdirección General de
+                    Coordinación Bibliotecaria (octubre/2018 – noviembre/2018)</p>
+                <p>Edición de metadatos (MARCXML y software Altova XMLSpy 2016)</p>
+                <p>Gestión de contenidos con CMS</p>
+                <p class="strong">Beca de formación e investigación de la “Biblioteca Nacional de España” de
+                    Biblioteconomía y Documentación como Documentalista en Entorno Digital. Dirección de Biblioteca
+                    Digital y Sistemas de Información (octubre/2017 – julio/2018)</p>
+                <p>Edición de imágenes digitales (software Limb)</p>
+                <p>Edición de metadatos (XML MARC21, METS y PREMIS)</p>
+                <p>Creación de manuales y procedimientos de trabajo</p>
+                <p>Gestón documental con software Alfresco</p>
+                <p class="strong">Beca para postgraduados de formación archivística, documental y bibliotecaria
+                    relacionada con la actividad oficial del “Senado”. Departamento de Documentación de la Unión Europea
+                    (enero/2017 – febrero/2017) y de Asistencia Técnico Parlamentaria (ATP) (febrero/2017 –
+                    septiembre/2017)</p>
+                <p>Indización</p>
+                <p class="strong">Prácticas académicas en biblioteca universitaria, para “Consorcio Madroño” en la
+                    “Biblioteca Rey Pastor” de la “Universidad Carlos III de Madrid”, departamento de Recursos de
+                    Información, Repositorio Institucional Digital “eArchivo” (abril/2016 – diciembre/2016)</p>
+                <p>Administración de repositorio digital (metadatos Dublin Core y software DSpace)</p>
+                <p class="strong">Practicum, como bibliotecario documentalista, del Grado en Información y
+                    Documentación en “Fundación Félix Rodríguez de la Fuente”. (febrero/2014 – mayo/2014)</p>
+                <p>Gestión de contenidos con CMS</p>
+            </div>
+
+            <div id="formation" class="tab-content">
+                <p></p>
+                <p class="strong">Máster Universitario en Bibliotecas y Servicios de Información Digital <i
+                        onclick="openModalInfo('master')" class="fas fa-info-circle"></i></p>
+                <p>Universidad Carlos III de Madrid (octubre/2014 - octubre/2015)</p>
+                <p class="strong">Grado en Información y Documentación <i onclick="openModalInfo('infodoc')"
+                        class="fas fa-info-circle"></i></p>
+                <p>Universidad Carlos III de Madrid (octubre/2010 – octubre/2014)</p>
+                <p class="strong">Cursos</p>
+                <p>“Impacto y medida del acceso abierto” por “Secretaría General de RRHH” del “Consejo Superior de
+                    Investigaciones Científicas (CSIC)” (10 horas) (octubre/2019)</p>
+                <p>“Realizar informes de impacto en GesBib informes de bibliometría” por “Secretaría General de RRHH”
+                    del “Consejo Superior de Investigaciones Científicas (CSIC)” (15 horas) (junio/2019)</p>
+                <p>“Servicios de digital.csic a la comunidad científica y técnica institucional” por “Secretaría General
+                    de RRHH” del “Consejo Superior de Investigaciones Científicas (CSIC)” (18 horas) (marzo/2019)
+                </p>
+                <p>“Gestión de repositorios digitales con DSpace” en “SEDIC” (45 horas) (febrero-marzo/2019) <i
+                        onclick="openModalInfo('sedicdspace')" class="fas fa-info-circle"></i></p>
+                <p>“Preservación digital: Cómo pasar del problema a la planificación de soluciones” en “SEDIC” (45
+                    horas) (febrero-marzo/2019) <i onclick="openModalInfo('sedicpreservacion')"
+                        class="fas fa-info-circle"></i></p>
+                <p>"La biblioteca del futuro. Tendencias tecnológicas en servicios, roles y contenidos digitales"
+                    organizado e impartido por ODILO a través de SEDIC (15 horas) (junio/2018) <i
+                        onclick="openModalInfo('sedicfuturo')" class="fas fa-info-circle"></i></p>
+                <p>“Gamificación: el engagement positivo y significativo” en “SEDIC” (45 horas)
+                    (noviembre-diciembre/2017) <i onclick="openModalInfo('sedicgamificacion')"
+                        class="fas fa-info-circle"></i></p>
+                <p>“Gestión y Organización de Recursos Electrónicos” en “SEDIC” (45 horas) (marzo-abril/2017) <i
+                        onclick="openModalInfo('sedicrecursos')" class="fas fa-info-circle"></i></p>
+                <p>“Planificación y Gestión de Bibliotecas Digitales” en “SEDIC” (45 horas) (marzo-abril/2017) <i
+                        onclick="openModalInfo('sedicbib')" class="fas fa-info-circle"></i></p>
+                <p>“Facultativo de Biblioteca (Grupo A1)” en “Estudio de Técnicas Documentales” (440 horas)
+                    (noviembre/2015 – junio/2016)</p>
+                <p>MOOC “Reading Literature in the Digital Age” de “University of Basel” en “FutureLearn” (24 horas)
+                    (año 2016)</p>
+                <p>“Content Curator: filtrando y distribuyendo contenidos digitales relevantes. Una nueva e
+                    imprescindible competencia en la web 3.0” en “Instituto Agustín Millares” de la “Universidad Carlos
+                    III de Madrid”. 8º edición (40 horas) (mayo-junio/2014)</p>
+                <p>“Social Media y Community Management” en “Instituto Agustín Millares” de la “Universidad Carlos III
+                    de Madrid”. 9º edición (40 horas) (enero-marzo/2014)</p>
+                <p>MOOC “Estrategias de Marketing Online. Community Manager” de “Universidad CEU Cardenal Herrera” en
+                    “Miríada X”. 1º edición (20 horas) (año 2014)</p>
+                <p>MOOC “Derecho y Redes Sociales” de “Universidad Europea de Madrid” en “Miríada X”. 1º edición (30
+                    horas) (año 2014)</p>
+                <p>MOOC “Diseño, Organización y Evaluación de videojuegos y gamificación” de “Universidad Europea de
+                    Madrid” en “Miríada X”. 1º edición (30 horas) (año 2014)</p>
+                <p>MOOC “Estadística Descriptiva” de “Universidad Politécnica de Cartagena” en “Miríada X”. 2º edición
+                    (16 horas) (año 2014)</p>
+            </div>
+
+            <div id="events" class="tab-content">
+                <p>5as Jornadas de Análisis de la Red de Bibliotecas y Archivos del CSIC (Bibliotecas y Archivos del
+                    CSIC por la Ciencia Abierta: presente y futuro). 28-29 de noviembre de 2019, Madrid (España). Red de
+                    Bibliotecas y Archivos del Consejo Superior de Investigaciones Científicas.</p>
+                <p>XXI Jornada de Gestión de la Información de SEDIC (¡Nos movemos! Viaje hacia la gestión cultural
+                    desde archivos, bibliotecas, centros de documentación y museos). 29 de abril de 2019, Madrid
+                    (España). SEDIC y Biblioteca Nacional de España.</p>
+                <p>Las bibliotecas como laboratorios ciudadanos: la biblioteca como plataforma. 8 de noviembre de 2018,
+                    Madrid (España). Subdirección General de Coordinación Bibliotecaria y Medialab Prado.</p>
+                <p>XX Jornada de Gestión de la Información de SEDIC (Más allá de las nubes: accesibilidad, información y
+                    conocimiento). 7 de noviembre de 2018, Madrid (España). SEDIC y Biblioteca Nacional de España.</p>
+                <p>VIII Jornada del Día Mundial del Patrimonio Audiovisual en la BNE (La gestión de los documentos
+                    sonoros y audiovisuales: Un reto del siglo XXI). 25 de octubre de 2018, Madrid (España). Biblioteca
+                    Nacional de España.</p>
+                <p>Jornada La edición digital de textos: estado actual y perspectivas. 11 de diciembre de 2017, Madrid
+                    (España). Biblioteca Nacional de España.</p>
+                <p> XIX Jornada de Gestión de la Información de SEDIC (Regreso al futuro: Visionarios de Ayer, Hoy y
+                    Mañana). 14 de noviembre de 2017, Madrid (España). SEDIC y Biblioteca Nacional de España.</p>
+                <p>Jornada Desarrollo de RDA y casos de implementación en Europa. 27 de octubre de 2017, Madrid
+                    (España). Biblioteca Nacional de España.</p>
+                <p>Congreso Iberoamericano de Bibliotecas Escolares (Educación por competencias: reto del milenio para
+                    la interculturalidad y la inclusión social). 26-28 de octubre de 2015, Getafe (Madrid, España).
+                    Universidad Carlos III de Madrid, Universidad Estatal Paulista “Júlio de Mesquita Filho” y
+                    Ayuntamiento de Getafe.</p>
+            </div>
+
+            <div id="published" class="tab-content">
+                <p class="strong">Colaboraciones en blogs</p>
+                <p><a href="https://www.libfocus.com/2019/05/institutional-repository-digital-csic-open-science.html">Beyond
+                        records storage… Institutional repository Digital CSIC as service for open science</a> (2019,
+                    mayo, 22). Libfocus.</p>
+                <p><a href="https://www.libfocus.com/2018/07/national-library-spain-intern-digital-service.html"
+                        target="_blank">National Library of Spain: my librarian as an Intern at Digital Library
+                        Service</a> (2018, julio, 29). Libfocus.</p>
+                <p><a href="http://www.infotecarios.com/el-papel-de-la-biblioteca-trasciende-al-libro/"
+                        target="_blank">El papel de la biblioteca trasciende al libro</a> (2018, abril, 05).
+                    Infotecarios.</p>
+                <p><a href="https://www.libfocus.com/2017/07/video-games-and-libraries.html" target="_blank">Videogames
+                        and Libraries</a> (2017, julio, 25). Libfocus.</p>
+            </div>
+
+        </div>
+
+        <!-- RESUME - PUBLICATIONS (COLLAPSIBLE) -->
+
+        <div id="research" class="filter-container">
+
+            <h3>Dr. Cruz-Palacios, E.</h3>
+
+            <button id="acc1" class="accordion" onclick="accordion('acc1')">Education</button>
+            <div class="panel">
+                <p class="strong">Doctorado en Documentación: Archivos y Bibliotecas en el Entorno Digital</p>
+                <p>Universidad Carlos III de Madrid (marzo/2016 - enero/2019)</p>
+                <p>Sobresaliente Cum Laude</p>
+                <p>Premio Extraordinario de Doctorado</p>
+                <p class="strong">Seminario Líneas y Metodologías de Investigación en Biblioteconomía y Documentación
+                </p>
+                <p>Departamento de Biblioteconomía y Documentación de la Universidad Carlos III de Madrid (20 horas)
+                    (25-28/junio/2018)</p>
+                <p class="strong">Seminario Identidad Digital, Difusión y Reputación online en Library and
+                    Information Science</p>
+                <p>Departamento de Biblioteconomía y Documentación de la Universidad Carlos III de Madrid (20 horas)
+                    (07/mayo/2018 – 01/junio/2018)</p>
+                <p class="strong">Cursos de la Escuela de Doctorado de la Universidad Carlos III de Madrid</p>
+                <p>Presentaciones Eficaces (20 horas) (enero/2017)</p>
+                <p>Trabajo en Equipo (20 horas) (noviembre/2016)</p>
+                <p>Academic Writing in English (16 horas) (junio/2016). Nivel: B2-C1 (CEFRL)</p>
+            </div>
+
+            <button id="acc2" class="accordion" onclick="accordion('acc2')">Proyects</button>
+            <div class="panel">
+                <p class="strong">Vocabularios para una Red de Archivos y Colecciones de Media Art y sus Efectos:
+                    Metaliteracy y Turismo de Conocimiento</p>
+                <p>Universidad Carlos III de Madrid (enero/2016 - diciembre/2019)</p>
+                <p>Referencia I+D+I: HAR2016-75949-C2-1-R</p>
+            </div>
+
+            <button id="acc3" class="accordion" onclick="accordion('acc3')">Publications</button>
+            <div class="panel">
+                <p class="strong">Trabajos académicos</p>
+                <p>Tesis Doctoral <a href="http://hdl.handle.net/10016/28225" target="_blank">Centro de Recursos para la
+                        Enseñanza y el Aprendizaje en una Educación basada en Competencias Digitales: Gaming y
+                        Videojuegos para las Alfabetizaciones Múltiples y la Formación del Profesional de la
+                        Información</a></p>
+                <p>Trabajo Fin de Máster <a href="http://hdl.handle.net/10016/21655" target="_blank">Sedes web de las
+                        bibliotecas escolares de España: evaluación, análisis y heurística</a></p>
+                <p>Trabajo Fin de Grado <a href="http://hdl.handle.net/10016/22580" target="_blank">Desarrollo de la
+                        biblioteca escolar del CEIP José Ortiz Echagüe a través de un web/blog</a></p>
+
+                <p class="strong">Revistas científicas</p>
+                <p>Marzal García-Quismondo, M.A.; Cruz-Palacios, E. y Castro Morales, F. <a
+                        href="http://doi.org/10.3233/EFI-190284" target="_blank">A didactic innovation project in Higher
+                        Education through a Visual and Academic Literacy competence-based program</a>. Education for
+                    Information (ISSN 0167-8329, ISSN-e 1875-8649), 35(3), 263-283, issue “Visual Learning: Origins,
+                    Approaches and New Orientations”.</p>
+                <p>Marzal García-Quismondo, M.A.; Cruz-Palacios, E. (2018). <a
+                        href="http://dx.doi.org/10.5209/RGID.62836" target="_blank">Gaming como Instrumento Educativo
+                        para una Educación en Competencias Digitales desde los Academic Skills Centres</a>. Revista
+                    General de Información y Documentación (ISSN 1132-1873, ISSN-e 1988-2858), 28(2).</p>
+
+                <p class="strong">Congresos</p>
+                <p>European Conference on Information Literacy 2018. University of Oulu. Cruz-Palacios, E.; Marzal
+                    García-Quismondo, M.A. <a href="https://doi.org/10.1007/978-3-030-13472-3_39" target="_blank">Gaming
+                        for Multiliteracies: Video Games into a Case Study with Primary School Students to Enhance
+                        Information, Visual and Media Literacies</a>. 24-27 de septiembre de 2018, Oulu (Finlandia)</p>
+                <p>II Jornadas de Estudiantes de Ciencias de la Documentación: Tendiendo Puentes. Universidad
+                    Complutense de Madrid. Cruz-Palacios, E.; Marzal García-Quismondo, M.A. <a
+                        href="http://hdl.handle.net/10261/177933" target="_blank">Alfabetización en Información y
+                        Videojuegos Educativos para una Educación Competencial: de Biblioteca Escolar a Centro de
+                        Recursos para la Enseñanza y el Aprendizaje (CREA)</a>. 17-18 de mayo de 2018, Madrid (España)
+                </p>
+                <p>V Congreso de Educación y Videojuegos (CIVE17): Del diseño al desarrollo de experiences lúdicas
+                    educativas. Universidad de La Laguna. Cruz-Palacios, E.; Marzal García-Quismondo, M.A. <a
+                        href="http://riull.ull.es/xmlui/handle/915/6657" target="_blank">Gaming como Medio Didáctico
+                        para las Alfabetizaciones Múltiples: Videojuegos en la Educación del Siglo XXI</a>. 7-9 de junio
+                    de 2017, Puerto de la Cruz (Santa Cruz de Tenerife, España)</p>
+
+                <p class="strong">Ponencias</p>
+                <p><a href="http://hdl.handle.net/10261/178768" target="_blank">Bibliotecas Escolares en la Sociedad del
+                        Conocimiento: gestión, posibilidades, tendencias y evolución a CREA</a>. I Jornada de formación
+                    para el profesorado (del programa experimental para el desarrollo de las competencias informacional
+                    y digital): "La Sociedad de la Información y del Conocimiento, la biblioteca escolar y los
+                    diferentes ámbitos de comunicación oral y escrita". 2 de febrero de 2019, en el CEIP Joaquín Costa
+                    (Zaragoza)</p>
+                <p></p>
+
+                <p class="strong">Revistas profesionales</p>
+                <p><a href="http://hdl.handle.net/10261/176646" target="_blank">Más allá del libro… Dinamización de la
+                        Biblioteca Escolar a través de la Web</a>. Mi biblioteca: La revista del mundo bibliotecario,
+                    13(50), pp. 52-55</p>
+
+                <p class="strong">Otros medios</p>
+                <p><a href="https://theconversation.com/por-que-las-bibliotecas-escolares-espanolas-siguen-ancladas-en-el-pasado-112311"
+                        target="_blank">Por qué las bibliotecas escolares españolas siguen ancladas en el pasado</a>
+                    (2019 abril, 28). The Conversation Spain</p>
+            </div>
+
+            <button id="acc4" class="accordion" onclick="accordion('acc4')">Peer reviews</button>
+            <div class="panel">
+                <p class="strong">Recursos gamificados en educación superior. Una experience práctica</p>
+                <p>(mayo/2019) Apertura: Revista de Innovación Educativa (ISSN 1665-6180) (ISSN-e 2007-1094)</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="form-container">
+
+            <form method="POST" action="">
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required autocomplete="on">
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" autocomplete="on" maxlength="9">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required autocomplete="on">
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+                </p>
+
+                <p>
+                    <input id="submit" name="submit" value="SEND" onclick="showPopup()">
+                </p>
+
+            </form>
+
+            <div class="popup-container" id="popup-container">
+                <div class="popup" id="popup-content">
+                    <i class="fas fa-times" onclick="removePopup()"></i>
+                    <h2>Thanks!</h2>
+                    <p>No server, so your message went to nowhere</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="rrss">
+
+            <a id="github" onmouseover="animateIcon('github')" href="https://github.com/eduardocruzpalacios"
+                target="_blank" class="animate__animated" title="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+
+            <a id="linkedin" onmouseover="animateIcon('linkedin')"
+                href="https://www.linkedin.com/in/eduardocruzpalacios/" target="_blank" class="animate__animated"
+                title="LinkedIn">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+
+            <a id="devto" onmouseover="animateIcon('devto')" href="#" target="_blank" class="animate__animated"
+                title="DEV.to">
+                <i class="fab fa-dev fa-2x"></i>
+            </a>
+
+            <a id="stackoverflow" onmouseover="animateIcon('stackoverflow')" href="#" target="_blank"
+                class="animate__animated" title="StackOverFlow">
+                <i class="fab fa-stack-overflow fa-2x"></i>
+            </a>
+
+        </div>
+
+        <h3>Eduardo de la Cruz Palacios <i class="far fa-copyright"></i> 2021</h3>
+
+    </footer>
+
+</body>
+
+</html>

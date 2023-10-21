@@ -1,0 +1,80 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-stretch: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPO */
+
+nav a.home,
+h1,
+h2,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav div.nav-menu,
+p,
+li,
+a,
+label,
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* COLORS */
+:root {
+  --black1: #000000;
+  --black2: rgba(0, 0, 0, 0.8);
+  --grey: #111111;
+  --darkBlue: #043b5f;
+  --lightBlue: #007fd4;
+  --white2: #eeeeee;
+  --white1: #fff;
+  --borderRadius: 16px;
+}
+
+/*
+
+bg color egggradient DEEP WATER
+
+background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+
+*/
+
+body {
+  background-color: var(--white2);
+}
+
+/* SCROLL MOOD */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* FONT */
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+footer h3 {
+  font-size: 1rem;
+}

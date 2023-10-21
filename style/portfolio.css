@@ -1,0 +1,128 @@
+#portfolio {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 100px 0;
+  row-gap: 20px;
+  width: 100%;
+  z-index: 0;
+}
+
+#portfolio h2 {
+  color: var(--darkBlue);
+}
+
+#portfolio article {
+  background-color: var(--white1);
+  border-radius: var(--borderRadius);
+  column-gap: 0;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: auto;
+  width: 90%;
+}
+
+#portfolio div.image {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  height: 60%;
+  width: 100%;
+}
+
+#portfolio div#calculator {
+  background: url(../img/calculator.JPG) no-repeat;
+  background-size: cover;
+}
+
+#portfolio div#primitiva {
+  background: url(../img/primitiva.jpg) no-repeat;
+  background-size: cover;
+}
+
+#portfolio div#quiz {
+  background: url(../img/quiz.jpg) no-repeat;
+  background-size: cover;
+}
+
+#portfolio div#countdown-timer {
+  background: url(../img/countdownTimer.jpg) no-repeat;
+  background-size: cover;
+}
+
+#portfolio div#corporate {
+  background: url(../img/corporate.jpg) no-repeat;
+  background-size: cover;
+}
+
+#portfolio div.title {
+  align-items: center;
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  width: 100%;
+}
+
+#portfolio div.links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#portfolio a {
+  background-color: var(--darkBlue);
+  color: var(--white1);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.25s linear;
+  width: 50%;
+}
+
+#portfolio a:first-of-type {
+  border-right: 2px white solid;
+}
+
+#portfolio a:hover {
+  background-color: var(--lightBlue);
+}
+
+#portfolio a.left {
+  border-bottom-left-radius: var(--borderRadius);
+}
+
+#portfolio a.right {
+  border-bottom-right-radius: var(--borderRadius);
+}
+
+/* MQ PC */
+
+@media (min-width: 600px) {
+  #portfolio {
+    grid-template-columns: 50% 50%;
+  }
+
+  #portfolio h2 {
+    grid-column: 1 / span 2;
+  }
+
+  #portfolio article {
+    width: 90%;
+  }
+}
+
+@media (min-width: 993px) {
+  #portfolio {
+    grid-template-columns: auto auto auto;
+  }
+
+  #portfolio h2 {
+    grid-column: 1 / span 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  #portfolio {
+    margin: auto;
+    width: 1280px;
+  }
+}

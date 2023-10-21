@@ -1,0 +1,42 @@
+/* image source: https://pixabay.com/photos/lego-star-wars-toys-stormtroopers-2539844/ */
+#about .hero-image {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/about.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+#about .hero-text {
+  color: var(--white1);
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px var(--black2);
+}
+
+#about i {
+  color: var(--white1);
+  display: block;
+  font-size: 4rem;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 82vh;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s linear;
+}
+
+#about i:hover {
+  top: 85vh;
+}
+
+/* MQ PC */
+
+@media (min-width: 1280px) {
+  #about .hero-image {
+    margin: auto;
+    width: 1280px;
+  }
+}
